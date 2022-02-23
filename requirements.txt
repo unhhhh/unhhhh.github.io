@@ -1,7 +1,2 @@
 python-youtube
-
-# https://developers.google.com/youtube/v3/quickstart/python
-google-api-python-client
-google-auth-oauthlib
-google-auth-httplib2
 youtube-transcript-api

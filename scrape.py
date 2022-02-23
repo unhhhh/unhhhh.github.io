@@ -1,19 +1,6 @@
-import io
-import os
-
-import google_auth_oauthlib.flow
-import googleapiclient.discovery
-import googleapiclient.errors
-
-from googleapiclient.http import MediaIoBaseDownload
-
+from pyyoutube import Api
 from youtube_transcript_api import YouTubeTranscriptApi
 
-
-
-scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
-
-from pyyoutube import Api
 
 unhhhh_playlist_id = 'PLhgFEi9aNUb2BNrIEecCGXApgeX7Yjwz8'
 
