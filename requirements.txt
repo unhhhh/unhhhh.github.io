@@ -1,5 +1,7 @@
 python-youtube
 
 # https://developers.google.com/youtube/v3/quickstart/python
-#--upgrade google-api-python-client
-#--upgrade google-auth-oauthlib google-auth-httplib2
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+youtube-transcript-api
