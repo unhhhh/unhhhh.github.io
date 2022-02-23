@@ -1,6 +1,6 @@
 from pyyoutube import Api
 from youtube_transcript_api import YouTubeTranscriptApi
-
+from youtube_transcript_api._errors import TranscriptsDisabled
 
 unhhhh_playlist_id = 'PLhgFEi9aNUb2BNrIEecCGXApgeX7Yjwz8'
 
@@ -16,10 +16,14 @@ def srt_to_link(video_id, text, start):
 
 
 all_lines = []
-for video in playlist_items.items:
+for i, video in enumerate(playlist_items.items):
+    print(f"Scraping video {i+1}/{len(playlist_items.items)}...", end='\r')
     this_video_id = video.snippet.resourceId.videoId
     these_lines = [f'<h1>{video.snippet.title}</h1>\n']
-    srt = YouTubeTranscriptApi.get_transcript(this_video_id)
+    try:
+        srt = YouTubeTranscriptApi.get_transcript(this_video_id)
+    except TranscriptsDisabled as e:
+        continue
     these_lines.extend(srt_to_link(this_video_id, _srt['text'], _srt['start']) for _srt in srt)
     all_lines.extend(these_lines)
     with open("index.html", "w") as file1:
