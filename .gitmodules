@@ -1,0 +1,3 @@
+[submodule "youtube_scrape_utils"]
+	path = youtube_scrape_utils
+	url = git@github.com:ink-free-read/youtube_scrape_utils.git
