@@ -1,2 +1,1 @@
-python-youtube
-youtube-transcript-api
+-r youtube_scrape_utils/requirements.txt
