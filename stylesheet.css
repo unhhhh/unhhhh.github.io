@@ -4,6 +4,25 @@ body {
     color: white;
 }
 
+a {
+    transition: 0.3s;
+}
+
+.donation {
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  16% { color: orange; }
+  33% { color: yellow; }
+  50% { color: green; }
+  66% { color: blue; }
+  83% { color: purple; }
+  100% { color: red; }
+}
+
+
 a:link {
     color: white;
     text-decoration: none;
@@ -12,6 +31,7 @@ a:visited {
     color: #A0A0A0;
 }
 a:hover {
+    color: #A0A0A0;
     text-decoration: underline;
 }
 a:active {

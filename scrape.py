@@ -15,6 +15,17 @@ full_html = f"""\
 	<link rel="shortcut icon" href="img/head_icon.ico">
 </head>
 <body>
+<p>Has this site been helpful to find your favorite quotes from The Dolls™️? If so, <a href="https://www.paypal.com/paypalme/unhhhhbot" class="donation">tip this homosexual a coffee</a> so we can <a href="https://youtu.be/aE03-a3on7A?t=14"><u>keep the lights on!</u></a></p>
+<p>Check out more of the girls here: 
+<a href="https://www.youtube.com/c/WOWPresents"><u>WOWPresents</u></a> |
+<a href="https://trixiemattel.com/"><u>Trixie Mattel</u></a> |
+<a href="https://welovekatya.com/"><u>Katya Zamolodchikova</u></a>
+<p>
+
+<p>Any feedback or suggestions? <a href="https://github.com/unhhhh/unhhhh.github.io"><u>Create an issue on Github</u></a>.</p>
+
+<hr />
+
 {body}
 </body>
 </html>
