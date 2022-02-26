@@ -1,9 +1,9 @@
 from youtube_scrape_utils import YoutubeScraper
 
 
-scraper = YoutubeScraper("api_key.txt")
+scraper = YoutubeScraper("api_key.txt", cache_dir='./subtitles')
 unhhhh_playlist_id = 'PLhgFEi9aNUb2BNrIEecCGXApgeX7Yjwz8'
-body = scraper.transcript_html_from_playlist(unhhhh_playlist_id)
+body = scraper.transcript_html_from_playlist(unhhhh_playlist_id, sep='\n\t')
 full_html = f"""\
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,7 @@ full_html = f"""\
 
 <hr />
 
-{body}
+    {body}
 </body>
 </html>
 """
