@@ -1,3 +1,19 @@
 body {
-    font-family: monospace;;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: #A0A0A0;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: #808080;
 }
